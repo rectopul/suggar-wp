@@ -1,0 +1,313 @@
+0000.000 (0) Opened log file at time: Sat, 05 Jan 2019 09:11:02 +0000 on https://www.creaz-creatina.com.br
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0.2 PHP: 7.1.25 (cgi-fcgi, Linux usm68.siteground.biz 3.12.18-clouder0 #1 SMP Wed Mar 28 14:22:08 EEST 2018 x86_64) MySQL: 5.6.40-84.0-log WPLANG: pt_BR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 768M (used: 12.7M | 14M) multisite: N openssl: OpenSSL 1.0.2q  20 Nov 2018 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.010 (0) Free space on disk containing Updraft's temporary directory: 370214 MB
+0000.012 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.014 (0) Semaphore (fd, creaz_options) being initialised
+0000.015 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.016 (0) Set semaphore last lock (fd) time to 2019-01-05 09:11:02
+0000.016 (0) Semaphore lock (fd) complete
+0000.019 (0) Backup run: resumption=0, nonce=a942a580a654, file_nonce=a942a580a654 begun at=1546679462 (0s ago), job type=backup
+0000.019 (0) Scheduling a resumption (1) after 300 seconds (1546679762) in case this run gets aborted
+0000.044 (0) Checking if we have a zip executable available
+0000.045 (0) Testing: /usr/bin/zip
+0000.050 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.051 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.052 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.052 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.052 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.058 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.058 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.060 (0) Working binary zip found: /usr/bin/zip
+0000.061 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.061 (0) Creation of backups of directories: beginning
+0000.063 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.203 (0) Total entities for the zip file: 611 directories, 3672 files (0 skipped as non-modified), 53.1 MB
+0000.205 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.206 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.207 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.209 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.211 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.211 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4 MB, 3672 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.465 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: size is now: 2.30 MB
+0000.467 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 600 files added (on-disk size: 2404.8 KB)
+0000.469 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 700 files added (on-disk size: 2404.8 KB)
+0000.470 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 800 files added (on-disk size: 2404.8 KB)
+0000.472 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 900 files added (on-disk size: 2404.8 KB)
+0000.473 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1000 files added (on-disk size: 2404.8 KB)
+0000.474 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.6 MB, 3672 files batched, 501 (1002) added so far); re-opening (prior size: 2404.8 KB)
+0000.741 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: size is now: 3.30 MB
+0000.745 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1100 files added (on-disk size: 3343.4 KB)
+0000.748 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1200 files added (on-disk size: 3343.4 KB)
+0000.750 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1300 files added (on-disk size: 3343.4 KB)
+0000.754 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1400 files added (on-disk size: 3343.4 KB)
+0000.756 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1500 files added (on-disk size: 3343.4 KB)
+0000.757 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (16.6 MB, 3672 files batched, 501 (1503) added so far); re-opening (prior size: 3343.4 KB)
+0001.601 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: size is now: 7.70 MB
+0001.604 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1600 files added (on-disk size: 7895.9 KB)
+0001.605 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1700 files added (on-disk size: 7895.9 KB)
+0001.606 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1800 files added (on-disk size: 7895.9 KB)
+0001.608 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 1900 files added (on-disk size: 7895.9 KB)
+0001.609 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2000 files added (on-disk size: 7895.9 KB)
+0001.610 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.7 MB, 3672 files batched, 501 (2004) added so far); re-opening (prior size: 7895.9 KB)
+0001.962 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: size is now: 9.60 MB
+0001.966 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2100 files added (on-disk size: 9844 KB)
+0001.968 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2200 files added (on-disk size: 9844 KB)
+0001.971 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2300 files added (on-disk size: 9844 KB)
+0001.973 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2400 files added (on-disk size: 9844 KB)
+0001.975 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2500 files added (on-disk size: 9844 KB)
+0001.976 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (10.3 MB, 3672 files batched, 501 (2505) added so far); re-opening (prior size: 9844 KB)
+0002.523 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: size is now: 12.60 MB
+0002.525 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2600 files added (on-disk size: 12880.2 KB)
+0002.526 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2700 files added (on-disk size: 12880.2 KB)
+0002.528 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2800 files added (on-disk size: 12880.2 KB)
+0002.529 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 2900 files added (on-disk size: 12880.2 KB)
+0002.530 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 3000 files added (on-disk size: 12880.2 KB)
+0002.531 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.9 MB, 3672 files batched, 501 (3006) added so far); re-opening (prior size: 12880.2 KB)
+0002.985 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 3100 files added (on-disk size: 15288.4 KB)
+0002.987 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 3200 files added (on-disk size: 15288.4 KB)
+0002.988 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 3300 files added (on-disk size: 15288.4 KB)
+0002.990 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 3400 files added (on-disk size: 15288.4 KB)
+0002.991 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 3500 files added (on-disk size: 15288.4 KB)
+0002.992 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.3 MB, 3672 files batched, 501 (3507) added so far); re-opening (prior size: 15288.4 KB)
+0003.331 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip.tmp: 3600 files added (on-disk size: 16733.6 KB)
+0003.741 (0) Created plugins zip (0) - 17935.6 KB in 3.7 s (4889.2 KB/s) (sha1: 6634c2e9c38ef2b4f28b3923f685f5e8bf64762e, sha256: 2bc6c2b69a1cc19ac1ec34f3036b6391c54bb51f55692b53db61e612c6487e7a)
+0003.743 (0) Beginning creation of dump of themes (split every: 400 MB)
+0003.771 (0) Total entities for the zip file: 62 directories, 378 files (0 skipped as non-modified), 19 MB
+0003.774 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0003.777 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0003.780 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0004.085 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-themes.zip.tmp: size is now: 17.00 MB
+0004.253 (0) Created themes zip (0) - 17373.3 KB in 0.5 s (34897.5 KB/s) (sha1: 87bc2aed499ddf7a9934d0235b9103c7cf8206f2, sha256: 042125997cb5127e01bf1f8b3bd8f22bd86333e9dc428802d89970b2f0bd67e3)
+0004.254 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0004.254 (0) Looking for candidates to backup in: /home/pharmasp/public_html/creaz-creatina.com.br/files/uploads
+0004.255 (0) finding files: .htaccess: adding to list (1)
+0004.255 (0) finding files: 2018: adding to list (2)
+0004.255 (0) finding files: siteground-optimizer-assets: adding to list (3)
+0004.256 (0) finding files: 2019: adding to list (4)
+0004.256 (0) finding files: 2017: adding to list (5)
+0004.256 (0) finding files: wysija: adding to list (6)
+0004.257 (0) finding files: ithemes-security: adding to list (7)
+0004.257 (0) finding files: mailpoet: adding to list (8)
+0004.257 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0004.293 (0) Total entities for the zip file: 54 directories, 423 files (0 skipped as non-modified), 28.6 MB
+0004.296 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0004.299 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0004.300 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.1 MB, 423 files batched, 223 (223) added so far); re-opening (prior size: 0 KB)
+0004.535 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-uploads.zip.tmp: size is now: 25.20 MB
+0004.538 (0) A useful amount of data was added after this amount of zip processing: 0.7 s (normalised: 0.7 s, rate: 34674.5 KB/s)
+0004.538 (0) Performance is good - will increase the amount of data we attempt to batch (time=0.74223709106445, normalised_time=0.73829490315346, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=209715200)
+0004.540 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-uploads.zip.tmp: 300 files added (on-disk size: 25789.6 KB)
+0004.541 (0) Zip: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-uploads.zip.tmp: 400 files added (on-disk size: 25789.6 KB)
+0004.937 (0) Created uploads zip (0) - 29402.1 KB in 0.7 s (43843.5 KB/s) (sha1: 1e3968db45f5970a73467a2cf6ad6149bfaa725c, sha256: 625463e5329c2da683798449b7e616a9e0a83c315f4c7ce99d0c514f3b9f92c6)
+0004.940 (0) Beginning backup of other directories found in the content directory (index: 0)
+0004.941 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0004.943 (0) Looking for candidates to backup in: /home/pharmasp/public_html/creaz-creatina.com.br/files
+0004.943 (0) finding files: updraft: skipping: this is the updraft directory
+0004.944 (0) finding files: upgrade: skipping: excluded by options
+0004.944 (0) finding files: wflogs: adding to list (1)
+0004.944 (0) finding files: ai1wm-backups: skipping: excluded by options (glob)
+0004.945 (0) finding files: languages: adding to list (2)
+0004.945 (0) finding files: plugins: skipping: this is the plugins directory
+0004.946 (0) finding files: themes: skipping: this is the themes directory
+0004.946 (0) finding files: uploads: skipping: this is the uploads directory
+0004.946 (0) finding files: .DS_Store: adding to list (3)
+0004.947 (0) finding files: index.php: adding to list (4)
+0004.958 (0) Total entities for the zip file: 4 directories, 81 files (0 skipped as non-modified), 9.2 MB
+0005.561 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-others.zip.tmp: size is now: 3.30 MB
+0005.616 (0) Created others zip (0) - 3427.2 KB in 0.7 s (5186.7 KB/s) (sha1: 9cab5ea5422613adaf2db68e99151fdc9ddbbc9a, sha256: 1ef76f12db93e91eca6bdcf01fd55d328b930e59bc1b17c940fac60718e3551e)
+0005.620 (0) Saving backup status to database (elements: 8)
+0005.621 (0) Beginning creation of database dump (WordPress DB)
+0005.622 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0005.634 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `creaz_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\n (truncated - 1232 bytes total)
+0005.636 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0005.664 (0) Table creaz_options: Total expected rows (approximate): 236
+0005.708 (0) Table creaz_options: Total rows added: 237 in 0.04 seconds
+0005.711 (0) Table creaz_options: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_options.table.gz - 167.5 KB)
+0005.713 (0) Table creaz_users: Total expected rows (approximate): 2
+0005.716 (0) Table creaz_users: Total rows added: 2 in 0.00 seconds
+0005.716 (0) Table creaz_users: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_users.table.gz - 0.7 KB)
+0005.718 (0) Table creaz_usermeta: Total expected rows (approximate): 49
+0005.720 (0) Table creaz_usermeta: Total rows added: 53 in 0.00 seconds
+0005.721 (0) Table creaz_usermeta: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_usermeta.table.gz - 2.8 KB)
+0005.723 (0) Table creaz_commentmeta: Total expected rows (approximate): 0
+0005.726 (0) Table creaz_commentmeta: Total rows added: 0 in 0.00 seconds
+0005.727 (0) Table creaz_commentmeta: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_commentmeta.table.gz - 0.4 KB)
+0005.729 (0) Table creaz_comments: Total expected rows (approximate): 0
+0005.732 (0) Table creaz_comments: Total rows added: 1 in 0.00 seconds
+0005.732 (0) Table creaz_comments: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_comments.table.gz - 0.7 KB)
+0005.738 (0) Table creaz_links: Total expected rows (approximate): 0
+0005.740 (0) Table creaz_links: Total rows added: 0 in 0.00 seconds
+0005.741 (0) Table creaz_links: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_links.table.gz - 0.4 KB)
+0005.743 (0) Table creaz_postmeta: Total expected rows (approximate): 87
+0005.746 (0) Table creaz_postmeta: Total rows added: 89 in 0.00 seconds
+0005.746 (0) Table creaz_postmeta: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_postmeta.table.gz - 2.3 KB)
+0005.749 (0) Table creaz_posts: Total expected rows (approximate): 62
+0005.755 (0) Table creaz_posts: Total rows added: 68 in 0.01 seconds
+0005.755 (0) Table creaz_posts: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_posts.table.gz - 8.8 KB)
+0005.758 (0) Table creaz_term_relationships: Total expected rows (approximate): 5
+0005.760 (0) Table creaz_term_relationships: Total rows added: 5 in 0.00 seconds
+0005.760 (0) Table creaz_term_relationships: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_term_relationships.table.gz - 0.4 KB)
+0005.762 (0) Table creaz_term_taxonomy: Total expected rows (approximate): 0
+0005.765 (0) Table creaz_term_taxonomy: Total rows added: 1 in 0.00 seconds
+0005.766 (0) Table creaz_term_taxonomy: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_term_taxonomy.table.gz - 0.4 KB)
+0005.770 (0) Table creaz_termmeta: Total expected rows (approximate): 0
+0005.772 (0) Table creaz_termmeta: Total rows added: 0 in 0.00 seconds
+0005.772 (0) Table creaz_termmeta: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_termmeta.table.gz - 0.4 KB)
+0005.774 (0) Table creaz_terms: Total expected rows (approximate): 0
+0005.776 (0) Table creaz_terms: Total rows added: 1 in 0.00 seconds
+0005.777 (0) Table creaz_terms: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_terms.table.gz - 0.4 KB)
+0005.778 (0) Table creaz_yoast_seo_links: Total expected rows (approximate): 3
+0005.780 (0) Table creaz_yoast_seo_links: Total rows added: 3 in 0.00 seconds
+0005.780 (0) Table creaz_yoast_seo_links: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_yoast_seo_links.table.gz - 0.4 KB)
+0005.782 (0) Table creaz_yoast_seo_meta: Total expected rows (approximate): 11
+0005.783 (0) Table creaz_yoast_seo_meta: Total rows added: 11 in 0.00 seconds
+0005.784 (0) Table creaz_yoast_seo_meta: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_yoast_seo_meta.table.gz - 0.4 KB)
+0005.789 (0) Table creaz_itsec_distributed_storage: Total expected rows (approximate): 0
+0005.790 (0) Table creaz_itsec_distributed_storage: Total rows added: 0 in 0.00 seconds
+0005.791 (0) Table creaz_itsec_distributed_storage: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_distributed_storage.table.gz - 0.4 KB)
+0005.796 (0) Table creaz_itsec_fingerprints: Total expected rows (approximate): 0
+0005.798 (0) Table creaz_itsec_fingerprints: Total rows added: 0 in 0.00 seconds
+0005.798 (0) Table creaz_itsec_fingerprints: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_fingerprints.table.gz - 0.4 KB)
+0005.802 (0) Table creaz_itsec_geolocation_cache: Total expected rows (approximate): 0
+0005.804 (0) Table creaz_itsec_geolocation_cache: Total rows added: 0 in 0.00 seconds
+0005.804 (0) Table creaz_itsec_geolocation_cache: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_geolocation_cache.table.gz - 0.4 KB)
+0005.806 (0) Table creaz_itsec_lockouts: Total expected rows (approximate): 0
+0005.808 (0) Table creaz_itsec_lockouts: Total rows added: 2 in 0.00 seconds
+0005.809 (0) Table creaz_itsec_lockouts: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_lockouts.table.gz - 0.5 KB)
+0005.813 (0) Table creaz_itsec_logs: Total expected rows (approximate): 91
+0005.822 (0) Table creaz_itsec_logs: Total rows added: 169 in 0.01 seconds
+0005.823 (0) Table creaz_itsec_logs: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_logs.table.gz - 16.7 KB)
+0005.828 (0) Table creaz_itsec_temp: Total expected rows (approximate): 29
+0005.830 (0) Table creaz_itsec_temp: Total rows added: 72 in 0.00 seconds
+0005.831 (0) Table creaz_itsec_temp: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_temp.table.gz - 1.5 KB)
+0005.836 (0) Table creaz_wfblockediplog: Total expected rows (approximate): 0
+0005.838 (0) Table creaz_wfblockediplog: Total rows added: 0 in 0.00 seconds
+0005.838 (0) Table creaz_wfblockediplog: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfblockediplog.table.gz - 0.3 KB)
+0005.842 (0) Table creaz_wfblocks7: Total expected rows (approximate): 0
+0005.844 (0) Table creaz_wfblocks7: Total rows added: 0 in 0.00 seconds
+0005.844 (0) Table creaz_wfblocks7: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfblocks7.table.gz - 0.4 KB)
+0005.849 (0) Table creaz_wfconfig: Total expected rows (approximate): 219
+0005.855 (0) Table creaz_wfconfig: Total rows added: 225 in 0.01 seconds
+0005.855 (0) Table creaz_wfconfig: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfconfig.table.gz - 7.9 KB)
+0005.860 (0) Table creaz_wfcrawlers: Total expected rows (approximate): 0
+0005.862 (0) Table creaz_wfcrawlers: Total rows added: 0 in 0.00 seconds
+0005.862 (0) Table creaz_wfcrawlers: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfcrawlers.table.gz - 0.3 KB)
+0005.865 (0) Table creaz_wffilechanges: Total expected rows (approximate): 0
+0005.866 (0) Table creaz_wffilechanges: Total rows added: 0 in 0.00 seconds
+0005.867 (0) Table creaz_wffilechanges: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wffilechanges.table.gz - 0.3 KB)
+0005.871 (0) Table creaz_wffilemods: Total expected rows (approximate): 0
+0005.872 (0) Table creaz_wffilemods: Total rows added: 0 in 0.00 seconds
+0005.873 (0) Table creaz_wffilemods: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wffilemods.table.gz - 0.4 KB)
+0005.877 (0) Table creaz_wfhits: Total expected rows (approximate): 0
+0005.879 (0) Table creaz_wfhits: Total rows added: 0 in 0.00 seconds
+0005.879 (0) Table creaz_wfhits: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfhits.table.gz - 0.4 KB)
+0005.883 (0) Table creaz_wfhoover: Total expected rows (approximate): 0
+0005.886 (0) Table creaz_wfhoover: Total rows added: 0 in 0.00 seconds
+0005.886 (0) Table creaz_wfhoover: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfhoover.table.gz - 0.3 KB)
+0005.892 (0) Table creaz_wfissues: Total expected rows (approximate): 0
+0005.894 (0) Table creaz_wfissues: Total rows added: 0 in 0.00 seconds
+0005.894 (0) Table creaz_wfissues: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfissues.table.gz - 0.4 KB)
+0005.897 (0) Table creaz_wfknownfilelist: Total expected rows (approximate): 0
+0005.899 (0) Table creaz_wfknownfilelist: Total rows added: 0 in 0.00 seconds
+0005.899 (0) Table creaz_wfknownfilelist: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfknownfilelist.table.gz - 0.3 KB)
+0005.902 (0) Table creaz_wflivetraffichuman: Total expected rows (approximate): 0
+0005.904 (0) Table creaz_wflivetraffichuman: Total rows added: 0 in 0.00 seconds
+0005.904 (0) Table creaz_wflivetraffichuman: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wflivetraffichuman.table.gz - 0.3 KB)
+0005.907 (0) Table creaz_wflocs: Total expected rows (approximate): 0
+0005.909 (0) Table creaz_wflocs: Total rows added: 1 in 0.00 seconds
+0005.910 (0) Table creaz_wflocs: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wflocs.table.gz - 0.5 KB)
+0005.912 (0) Table creaz_wflogins: Total expected rows (approximate): 0
+0005.914 (0) Table creaz_wflogins: Total rows added: 0 in 0.00 seconds
+0005.914 (0) Table creaz_wflogins: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wflogins.table.gz - 0.4 KB)
+0005.917 (0) Table creaz_wfnotifications: Total expected rows (approximate): 0
+0005.918 (0) Table creaz_wfnotifications: Total rows added: 0 in 0.00 seconds
+0005.919 (0) Table creaz_wfnotifications: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfnotifications.table.gz - 0.3 KB)
+0005.921 (0) Table creaz_wfpendingissues: Total expected rows (approximate): 0
+0005.923 (0) Table creaz_wfpendingissues: Total rows added: 0 in 0.00 seconds
+0005.923 (0) Table creaz_wfpendingissues: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfpendingissues.table.gz - 0.4 KB)
+0005.926 (0) Table creaz_wfreversecache: Total expected rows (approximate): 0
+0005.928 (0) Table creaz_wfreversecache: Total rows added: 1 in 0.00 seconds
+0005.929 (0) Table creaz_wfreversecache: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfreversecache.table.gz - 0.4 KB)
+0005.931 (0) Table creaz_wfsnipcache: Total expected rows (approximate): 0
+0005.933 (0) Table creaz_wfsnipcache: Total rows added: 0 in 0.00 seconds
+0005.933 (0) Table creaz_wfsnipcache: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfsnipcache.table.gz - 0.4 KB)
+0005.936 (0) Table creaz_wfstatus: Total expected rows (approximate): 8
+0005.937 (0) Table creaz_wfstatus: Total rows added: 8 in 0.00 seconds
+0005.938 (0) Table creaz_wfstatus: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfstatus.table.gz - 0.7 KB)
+0005.941 (0) Table creaz_wftrafficrates: Total expected rows (approximate): 0
+0005.942 (0) Table creaz_wftrafficrates: Total rows added: 0 in 0.00 seconds
+0005.943 (0) Table creaz_wftrafficrates: finishing file (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wftrafficrates.table.gz - 0.3 KB)
+0005.944 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_options.table.gz (1/39): adding to final database dump
+0005.972 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_users.table.gz (2/39): adding to final database dump
+0005.973 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_usermeta.table.gz (3/39): adding to final database dump
+0005.973 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_commentmeta.table.gz (4/39): adding to final database dump
+0005.974 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_comments.table.gz (5/39): adding to final database dump
+0005.974 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_links.table.gz (6/39): adding to final database dump
+0005.975 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_postmeta.table.gz (7/39): adding to final database dump
+0005.975 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_posts.table.gz (8/39): adding to final database dump
+0005.977 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_term_relationships.table.gz (9/39): adding to final database dump
+0005.978 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_term_taxonomy.table.gz (10/39): adding to final database dump
+0005.978 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_termmeta.table.gz (11/39): adding to final database dump
+0005.979 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_terms.table.gz (12/39): adding to final database dump
+0005.979 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_yoast_seo_links.table.gz (13/39): adding to final database dump
+0005.979 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_yoast_seo_meta.table.gz (14/39): adding to final database dump
+0005.980 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_distributed_storage.table.gz (15/39): adding to final database dump
+0005.980 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_fingerprints.table.gz (16/39): adding to final database dump
+0005.980 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_geolocation_cache.table.gz (17/39): adding to final database dump
+0005.981 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_lockouts.table.gz (18/39): adding to final database dump
+0005.981 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_logs.table.gz (19/39): adding to final database dump
+0005.985 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_itsec_temp.table.gz (20/39): adding to final database dump
+0005.986 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfblockediplog.table.gz (21/39): adding to final database dump
+0005.986 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfblocks7.table.gz (22/39): adding to final database dump
+0005.986 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfconfig.table.gz (23/39): adding to final database dump
+0005.988 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfcrawlers.table.gz (24/39): adding to final database dump
+0005.988 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wffilechanges.table.gz (25/39): adding to final database dump
+0005.988 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wffilemods.table.gz (26/39): adding to final database dump
+0005.989 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfhits.table.gz (27/39): adding to final database dump
+0005.989 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfhoover.table.gz (28/39): adding to final database dump
+0005.989 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfissues.table.gz (29/39): adding to final database dump
+0005.990 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfknownfilelist.table.gz (30/39): adding to final database dump
+0005.990 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wflivetraffichuman.table.gz (31/39): adding to final database dump
+0005.990 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wflocs.table.gz (32/39): adding to final database dump
+0005.991 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wflogins.table.gz (33/39): adding to final database dump
+0005.991 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfnotifications.table.gz (34/39): adding to final database dump
+0005.991 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfpendingissues.table.gz (35/39): adding to final database dump
+0005.992 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfreversecache.table.gz (36/39): adding to final database dump
+0005.992 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfsnipcache.table.gz (37/39): adding to final database dump
+0005.992 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wfstatus.table.gz (38/39): adding to final database dump
+0005.993 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db-table-creaz_wftrafficrates.table.gz (39/39): adding to final database dump
+0005.993 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db.gz: finished writing out complete database file (176 KB)
+0005.998 (0) Total database tables backed up: 39 (backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db.gz, size: 215689, sha256)
+0006.000 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0006.000 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0006.001 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0006.001 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-others.zip: others: This file has not yet been successfully uploaded: will queue
+0006.001 (0) backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db.gz: db: This file has not yet been successfully uploaded: will queue
+0006.002 (0) Saving backup history. Total backup size: 66.7 MB
+0006.002 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0006.005 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0006.005 (0) No remote despatch: user chose no remote backup service
+0006.006 (0) Recording as successfully uploaded: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-plugins.zip
+0006.006 (0) Recording as successfully uploaded: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-themes.zip
+0006.007 (0) Recording as successfully uploaded: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-uploads.zip
+0006.008 (0) Recording as successfully uploaded: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-others.zip
+0006.009 (0) Recording as successfully uploaded: backup_2019-01-05-0711_Pharma_Sports_a942a580a654-db.gz
+0006.010 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0006.011 (0) Number of backup sets in history: 1; groups (db): 1
+0006.011 (0) Examining (for databases) backup set with group_id=0, nonce=a942a580a654, datestamp=1546679462 (Jan 05 2019 09:11:02)
+0006.011 (0) This backup set is the backup set just made, so will not be deleted.
+0006.011 (0) Number of backup sets in history: 1; groups (files): 1
+0006.011 (0) Examining (for files) backup set with nonce=a942a580a654, datestamp=1546679462 (Jan 05 2019 09:11:02)
+0006.011 (0) This backup set is the backup set just made, so will not be deleted.
+0006.012 (0) This backup set is the backup set just made, so will not be deleted.
+0006.012 (0) This backup set is the backup set just made, so will not be deleted.
+0006.012 (0) This backup set is the backup set just made, so will not be deleted.
+0006.012 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0006.012 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0006.014 (0) Resume backup (a942a580a654, 0): finish run
+0006.015 (0) Decremented the semaphore (fd) by 1
+0006.015 (0) Semaphore (fd) unlocked
+0006.015 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0006.016 (0) The backup apparently succeeded and is now complete
+0006.017 (0) No email will/can be sent - the user has not configured an email address.
+0006.017 (0) O backup aparentemente foi bem sucedido e está completo agora.

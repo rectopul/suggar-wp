@@ -1,0 +1,382 @@
+0000.000 (0) Opened log file at time: Tue, 08 Jan 2019 12:35:42 +0000 on https://www.creaz-creatina.com.br
+0000.000 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0.2 PHP: 7.1.25 (cgi-fcgi, Linux usm68.siteground.biz 3.12.18-clouder0 #1 SMP Wed Mar 28 14:22:08 EEST 2018 x86_64) MySQL: 5.6.40-84.0-log WPLANG: pt_BR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 768M (used: 12.7M | 14M) multisite: N openssl: OpenSSL 1.0.2q  20 Nov 2018 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.008 (0) Free space on disk containing Updraft's temporary directory: 367152.4 MB
+0000.009 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.011 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.012 (0) Set semaphore last lock (fd) time to 2019-01-08 12:35:42
+0000.012 (0) Semaphore lock (fd) complete
+0000.015 (0) Backup run: resumption=0, nonce=fcc0ad4c1585, file_nonce=fcc0ad4c1585 begun at=1546950942 (0s ago), job type=backup
+0000.015 (0) Scheduling a resumption (1) after 300 seconds (1546951242) in case this run gets aborted
+0000.022 (0) Checking if we have a zip executable available
+0000.023 (0) Testing: /usr/bin/zip
+0000.026 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.027 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.028 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.028 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.028 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.032 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.033 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.034 (0) Working binary zip found: /usr/bin/zip
+0000.035 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.035 (0) Creation of backups of directories: beginning
+0000.036 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.198 (0) Total entities for the zip file: 781 directories, 4568 files (0 skipped as non-modified), 67.8 MB
+0000.200 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.201 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.203 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.204 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.206 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.206 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4 MB, 4568 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.433 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: size is now: 2.40 MB
+0000.435 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 600 files added (on-disk size: 2453.3 KB)
+0000.437 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 700 files added (on-disk size: 2453.3 KB)
+0000.438 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 800 files added (on-disk size: 2453.3 KB)
+0000.440 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 900 files added (on-disk size: 2453.3 KB)
+0000.441 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1000 files added (on-disk size: 2453.3 KB)
+0000.442 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.6 MB, 4568 files batched, 501 (1002) added so far); re-opening (prior size: 2453.3 KB)
+0000.640 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: size is now: 3.30 MB
+0000.644 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1100 files added (on-disk size: 3392 KB)
+0000.647 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1200 files added (on-disk size: 3392 KB)
+0000.650 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1300 files added (on-disk size: 3392 KB)
+0000.652 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1400 files added (on-disk size: 3392 KB)
+0000.653 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1500 files added (on-disk size: 3392 KB)
+0000.654 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (16.6 MB, 4568 files batched, 501 (1503) added so far); re-opening (prior size: 3392 KB)
+0001.469 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: size is now: 7.80 MB
+0001.471 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1600 files added (on-disk size: 7944.5 KB)
+0001.472 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1700 files added (on-disk size: 7944.5 KB)
+0001.474 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1800 files added (on-disk size: 7944.5 KB)
+0001.475 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 1900 files added (on-disk size: 7944.5 KB)
+0001.477 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2000 files added (on-disk size: 7944.5 KB)
+0001.477 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.4 MB, 4568 files batched, 501 (2004) added so far); re-opening (prior size: 7944.5 KB)
+0001.800 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: size is now: 9.60 MB
+0001.836 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2100 files added (on-disk size: 9823.1 KB)
+0001.839 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2200 files added (on-disk size: 9823.1 KB)
+0001.841 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2300 files added (on-disk size: 9823.1 KB)
+0001.844 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2400 files added (on-disk size: 9823.1 KB)
+0001.846 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2500 files added (on-disk size: 9823.1 KB)
+0001.846 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (12.6 MB, 4568 files batched, 501 (2505) added so far); re-opening (prior size: 9823.1 KB)
+0002.431 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: size is now: 12.40 MB
+0002.434 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2600 files added (on-disk size: 12725.8 KB)
+0002.435 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2700 files added (on-disk size: 12725.8 KB)
+0002.436 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2800 files added (on-disk size: 12725.8 KB)
+0002.438 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 2900 files added (on-disk size: 12725.8 KB)
+0002.439 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3000 files added (on-disk size: 12725.8 KB)
+0002.440 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.9 MB, 4568 files batched, 501 (3006) added so far); re-opening (prior size: 12725.8 KB)
+0002.885 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3100 files added (on-disk size: 14973.5 KB)
+0002.887 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3200 files added (on-disk size: 14973.5 KB)
+0002.889 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3300 files added (on-disk size: 14973.5 KB)
+0002.891 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3400 files added (on-disk size: 14973.5 KB)
+0002.892 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3500 files added (on-disk size: 14973.5 KB)
+0002.911 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.1 MB, 4568 files batched, 501 (3507) added so far); re-opening (prior size: 14973.5 KB)
+0003.279 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3600 files added (on-disk size: 16638.3 KB)
+0003.280 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3700 files added (on-disk size: 16638.3 KB)
+0003.282 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3800 files added (on-disk size: 16638.3 KB)
+0003.283 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 3900 files added (on-disk size: 16638.3 KB)
+0003.285 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 4000 files added (on-disk size: 16638.3 KB)
+0003.285 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (9.5 MB, 4568 files batched, 501 (4008) added so far); re-opening (prior size: 16638.3 KB)
+0003.853 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 4100 files added (on-disk size: 19690.1 KB)
+0003.854 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 4200 files added (on-disk size: 19690.1 KB)
+0003.856 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 4300 files added (on-disk size: 19690.1 KB)
+0003.857 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 4400 files added (on-disk size: 19690.1 KB)
+0003.858 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip.tmp: 4500 files added (on-disk size: 19690.1 KB)
+0003.859 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.4 MB, 4568 files batched, 501 (4509) added so far); re-opening (prior size: 19690.1 KB)
+0004.422 (0) Created plugins zip (0) - 21548.9 KB in 4.4 s (4921.8 KB/s) (sha1: 571b66c5a84c2fe857c5bc498f3bdc6a12dc6b0c, sha256: 915a517d4df50bff65755a6202377d4d964f6013ef2419b4450f825967dd8b50)
+0004.423 (0) Beginning creation of dump of themes (split every: 400 MB)
+0004.446 (0) Total entities for the zip file: 62 directories, 380 files (0 skipped as non-modified), 19 MB
+0004.450 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0004.451 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0004.453 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0004.711 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip.tmp: size is now: 17.00 MB
+0004.897 (0) Created themes zip (0) - 17390.2 KB in 0.5 s (37315.2 KB/s) (sha1: 3ab9e1a376798604975b219fb22b9167ccdad894, sha256: 59e1c6bbf4d10d04643bd189d4c03281ac603c29a23bb84e21c5910e05290bdc)
+0004.899 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0004.899 (0) Looking for candidates to backup in: /home/pharmasp/public_html/creaz-creatina.com.br/files/uploads
+0004.900 (0) finding files: .htaccess: adding to list (1)
+0004.900 (0) finding files: 2018: adding to list (2)
+0004.901 (0) finding files: siteground-optimizer-assets: adding to list (3)
+0004.901 (0) finding files: 2019: adding to list (4)
+0004.901 (0) finding files: 2017: adding to list (5)
+0004.902 (0) finding files: wysija: adding to list (6)
+0004.902 (0) finding files: ithemes-security: adding to list (7)
+0004.902 (0) finding files: mailpoet: adding to list (8)
+0004.902 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0004.929 (0) Total entities for the zip file: 54 directories, 432 files (0 skipped as non-modified), 28.7 MB
+0004.931 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0004.932 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0004.933 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.2 MB, 432 files batched, 232 (232) added so far); re-opening (prior size: 0 KB)
+0005.152 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip.tmp: size is now: 25.30 MB
+0005.153 (0) A useful amount of data was added after this amount of zip processing: 0.8 s (normalised: 0.8 s, rate: 30640.1 KB/s)
+0005.154 (0) Performance is good - will increase the amount of data we attempt to batch (time=0.84371709823608, normalised_time=0.83550587788296, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=188252894)
+0005.155 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip.tmp: 300 files added (on-disk size: 25906.4 KB)
+0005.157 (0) Zip: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip.tmp: 400 files added (on-disk size: 25906.4 KB)
+0005.520 (0) Created uploads zip (0) - 29519 KB in 0.6 s (48431.6 KB/s) (sha1: e032cca9812459b99f8439f79c885d770dcaddd9, sha256: 56fd0013842d220763ba30046c1bcd4379d6d60dfbed4c0cb7713f75bf2eee17)
+0005.521 (0) Beginning backup of other directories found in the content directory (index: 0)
+0005.521 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0005.522 (0) Looking for candidates to backup in: /home/pharmasp/public_html/creaz-creatina.com.br/files
+0005.522 (0) finding files: updraft: skipping: this is the updraft directory
+0005.522 (0) finding files: upgrade: skipping: excluded by options
+0005.523 (0) finding files: wflogs: adding to list (1)
+0005.523 (0) finding files: ai1wm-backups: skipping: excluded by options (glob)
+0005.523 (0) finding files: languages: adding to list (2)
+0005.524 (0) finding files: plugins: skipping: this is the plugins directory
+0005.524 (0) finding files: themes: skipping: this is the themes directory
+0005.524 (0) finding files: uploads: skipping: this is the uploads directory
+0005.525 (0) finding files: .DS_Store: adding to list (3)
+0005.525 (0) finding files: index.php: adding to list (4)
+0005.535 (0) Total entities for the zip file: 4 directories, 85 files (0 skipped as non-modified), 9.2 MB
+0006.122 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip.tmp: size is now: 3.40 MB
+0006.158 (0) Created others zip (0) - 3455.3 KB in 0.6 s (5532.2 KB/s) (sha1: 67c17fba3543c5e3094c04fd1779dc1cea708050, sha256: 6da885ebe2b77b7abc17d34c7c0943147ad3c1382ff82946254028a883556b04)
+0006.160 (0) Saving backup status to database (elements: 8)
+0006.162 (0) Beginning creation of database dump (WordPress DB)
+0006.163 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0006.175 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `creaz_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\n (truncated - 1233 bytes total)
+0006.177 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0006.197 (0) Table creaz_options: Total expected rows (approximate): 300
+0006.249 (0) Table creaz_options: Total rows added: 302 in 0.05 seconds
+0006.254 (0) Table creaz_options: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_options.table.gz - 190.7 KB)
+0006.258 (0) Table creaz_users: Total expected rows (approximate): 2
+0006.262 (0) Table creaz_users: Total rows added: 2 in 0.00 seconds
+0006.262 (0) Table creaz_users: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_users.table.gz - 0.7 KB)
+0006.265 (0) Table creaz_usermeta: Total expected rows (approximate): 58
+0006.268 (0) Table creaz_usermeta: Total rows added: 66 in 0.00 seconds
+0006.269 (0) Table creaz_usermeta: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_usermeta.table.gz - 3.5 KB)
+0006.271 (0) Table creaz_commentmeta: Total expected rows (approximate): 0
+0006.274 (0) Table creaz_commentmeta: Total rows added: 0 in 0.00 seconds
+0006.274 (0) Table creaz_commentmeta: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_commentmeta.table.gz - 0.4 KB)
+0006.276 (0) Table creaz_comments: Total expected rows (approximate): 0
+0006.278 (0) Table creaz_comments: Total rows added: 1 in 0.00 seconds
+0006.279 (0) Table creaz_comments: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_comments.table.gz - 0.7 KB)
+0006.284 (0) Table creaz_links: Total expected rows (approximate): 0
+0006.290 (0) Table creaz_links: Total rows added: 0 in 0.00 seconds
+0006.290 (0) Table creaz_links: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_links.table.gz - 0.4 KB)
+0006.292 (0) Table creaz_postmeta: Total expected rows (approximate): 107
+0006.295 (0) Table creaz_postmeta: Total rows added: 109 in 0.00 seconds
+0006.297 (0) Table creaz_postmeta: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_postmeta.table.gz - 2.9 KB)
+0006.299 (0) Table creaz_posts: Total expected rows (approximate): 78
+0006.306 (0) Table creaz_posts: Total rows added: 78 in 0.01 seconds
+0006.307 (0) Table creaz_posts: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_posts.table.gz - 9.5 KB)
+0006.313 (0) Table creaz_term_relationships: Total expected rows (approximate): 5
+0006.316 (0) Table creaz_term_relationships: Total rows added: 5 in 0.00 seconds
+0006.317 (0) Table creaz_term_relationships: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_term_relationships.table.gz - 0.4 KB)
+0006.320 (0) Table creaz_term_taxonomy: Total expected rows (approximate): 0
+0006.322 (0) Table creaz_term_taxonomy: Total rows added: 1 in 0.00 seconds
+0006.322 (0) Table creaz_term_taxonomy: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_term_taxonomy.table.gz - 0.4 KB)
+0006.327 (0) Table creaz_termmeta: Total expected rows (approximate): 0
+0006.329 (0) Table creaz_termmeta: Total rows added: 0 in 0.00 seconds
+0006.330 (0) Table creaz_termmeta: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_termmeta.table.gz - 0.4 KB)
+0006.332 (0) Table creaz_terms: Total expected rows (approximate): 0
+0006.335 (0) Table creaz_terms: Total rows added: 1 in 0.00 seconds
+0006.335 (0) Table creaz_terms: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_terms.table.gz - 0.4 KB)
+0006.341 (0) Table creaz_yoast_seo_links: Total expected rows (approximate): 3
+0006.344 (0) Table creaz_yoast_seo_links: Total rows added: 2 in 0.00 seconds
+0006.344 (0) Table creaz_yoast_seo_links: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_yoast_seo_links.table.gz - 0.5 KB)
+0006.350 (0) Table creaz_yoast_seo_meta: Total expected rows (approximate): 24
+0006.354 (0) Table creaz_yoast_seo_meta: Total rows added: 28 in 0.00 seconds
+0006.356 (0) Table creaz_yoast_seo_meta: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_yoast_seo_meta.table.gz - 0.4 KB)
+0006.361 (0) Table creaz_itsec_distributed_storage: Total expected rows (approximate): 0
+0006.363 (0) Table creaz_itsec_distributed_storage: Total rows added: 0 in 0.00 seconds
+0006.364 (0) Table creaz_itsec_distributed_storage: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_distributed_storage.table.gz - 0.4 KB)
+0006.370 (0) Table creaz_itsec_fingerprints: Total expected rows (approximate): 0
+0006.372 (0) Table creaz_itsec_fingerprints: Total rows added: 0 in 0.00 seconds
+0006.373 (0) Table creaz_itsec_fingerprints: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_fingerprints.table.gz - 0.4 KB)
+0006.377 (0) Table creaz_itsec_geolocation_cache: Total expected rows (approximate): 0
+0006.380 (0) Table creaz_itsec_geolocation_cache: Total rows added: 0 in 0.00 seconds
+0006.381 (0) Table creaz_itsec_geolocation_cache: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_geolocation_cache.table.gz - 0.4 KB)
+0006.383 (0) Table creaz_itsec_lockouts: Total expected rows (approximate): 0
+0006.385 (0) Table creaz_itsec_lockouts: Total rows added: 2 in 0.00 seconds
+0006.386 (0) Table creaz_itsec_lockouts: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_lockouts.table.gz - 0.5 KB)
+0006.391 (0) Table creaz_itsec_logs: Total expected rows (approximate): 91
+0006.401 (0) Table creaz_itsec_logs: Total rows added: 169 in 0.01 seconds
+0006.402 (0) Table creaz_itsec_logs: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_logs.table.gz - 16.7 KB)
+0006.408 (0) Table creaz_itsec_temp: Total expected rows (approximate): 29
+0006.411 (0) Table creaz_itsec_temp: Total rows added: 72 in 0.00 seconds
+0006.412 (0) Table creaz_itsec_temp: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_temp.table.gz - 1.5 KB)
+0006.416 (0) Table creaz_wfblockediplog: Total expected rows (approximate): 0
+0006.418 (0) Table creaz_wfblockediplog: Total rows added: 0 in 0.00 seconds
+0006.419 (0) Table creaz_wfblockediplog: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfblockediplog.table.gz - 0.3 KB)
+0006.424 (0) Table creaz_wfblocks7: Total expected rows (approximate): 0
+0006.426 (0) Table creaz_wfblocks7: Total rows added: 0 in 0.00 seconds
+0006.427 (0) Table creaz_wfblocks7: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfblocks7.table.gz - 0.4 KB)
+0006.432 (0) Table creaz_wfconfig: Total expected rows (approximate): 219
+0006.438 (0) Table creaz_wfconfig: Total rows added: 225 in 0.00 seconds
+0006.438 (0) Table creaz_wfconfig: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfconfig.table.gz - 7.9 KB)
+0006.444 (0) Table creaz_wfcrawlers: Total expected rows (approximate): 0
+0006.447 (0) Table creaz_wfcrawlers: Total rows added: 0 in 0.00 seconds
+0006.447 (0) Table creaz_wfcrawlers: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfcrawlers.table.gz - 0.3 KB)
+0006.452 (0) Table creaz_wffilechanges: Total expected rows (approximate): 0
+0006.454 (0) Table creaz_wffilechanges: Total rows added: 0 in 0.00 seconds
+0006.455 (0) Table creaz_wffilechanges: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wffilechanges.table.gz - 0.3 KB)
+0006.462 (0) Table creaz_wffilemods: Total expected rows (approximate): 0
+0006.464 (0) Table creaz_wffilemods: Total rows added: 0 in 0.00 seconds
+0006.465 (0) Table creaz_wffilemods: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wffilemods.table.gz - 0.4 KB)
+0006.472 (0) Table creaz_wfhits: Total expected rows (approximate): 0
+0006.475 (0) Table creaz_wfhits: Total rows added: 0 in 0.00 seconds
+0006.475 (0) Table creaz_wfhits: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfhits.table.gz - 0.4 KB)
+0006.482 (0) Table creaz_wfhoover: Total expected rows (approximate): 0
+0006.485 (0) Table creaz_wfhoover: Total rows added: 0 in 0.00 seconds
+0006.485 (0) Table creaz_wfhoover: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfhoover.table.gz - 0.3 KB)
+0006.491 (0) Table creaz_wfissues: Total expected rows (approximate): 0
+0006.492 (0) Table creaz_wfissues: Total rows added: 0 in 0.00 seconds
+0006.493 (0) Table creaz_wfissues: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfissues.table.gz - 0.4 KB)
+0006.504 (0) Table creaz_wfknownfilelist: Total expected rows (approximate): 0
+0006.508 (0) Table creaz_wfknownfilelist: Total rows added: 0 in 0.00 seconds
+0006.508 (0) Table creaz_wfknownfilelist: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfknownfilelist.table.gz - 0.3 KB)
+0006.513 (0) Table creaz_wflivetraffichuman: Total expected rows (approximate): 0
+0006.542 (0) Table creaz_wflivetraffichuman: Total rows added: 0 in 0.03 seconds
+0006.543 (0) Table creaz_wflivetraffichuman: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wflivetraffichuman.table.gz - 0.3 KB)
+0006.549 (0) Table creaz_wflocs: Total expected rows (approximate): 0
+0006.551 (0) Table creaz_wflocs: Total rows added: 1 in 0.00 seconds
+0006.552 (0) Table creaz_wflocs: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wflocs.table.gz - 0.5 KB)
+0006.557 (0) Table creaz_wflogins: Total expected rows (approximate): 0
+0006.561 (0) Table creaz_wflogins: Total rows added: 0 in 0.00 seconds
+0006.562 (0) Table creaz_wflogins: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wflogins.table.gz - 0.4 KB)
+0006.566 (0) Table creaz_wfnotifications: Total expected rows (approximate): 0
+0006.568 (0) Table creaz_wfnotifications: Total rows added: 0 in 0.00 seconds
+0006.569 (0) Table creaz_wfnotifications: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfnotifications.table.gz - 0.3 KB)
+0006.573 (0) Table creaz_wfpendingissues: Total expected rows (approximate): 0
+0006.575 (0) Table creaz_wfpendingissues: Total rows added: 0 in 0.00 seconds
+0006.576 (0) Table creaz_wfpendingissues: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfpendingissues.table.gz - 0.4 KB)
+0006.581 (0) Table creaz_wfreversecache: Total expected rows (approximate): 0
+0006.582 (0) Table creaz_wfreversecache: Total rows added: 1 in 0.00 seconds
+0006.583 (0) Table creaz_wfreversecache: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfreversecache.table.gz - 0.4 KB)
+0006.587 (0) Table creaz_wfsnipcache: Total expected rows (approximate): 0
+0006.589 (0) Table creaz_wfsnipcache: Total rows added: 0 in 0.00 seconds
+0006.590 (0) Table creaz_wfsnipcache: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfsnipcache.table.gz - 0.4 KB)
+0006.594 (0) Table creaz_wfstatus: Total expected rows (approximate): 8
+0006.597 (0) Table creaz_wfstatus: Total rows added: 8 in 0.00 seconds
+0006.597 (0) Table creaz_wfstatus: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfstatus.table.gz - 0.7 KB)
+0006.601 (0) Table creaz_wftrafficrates: Total expected rows (approximate): 0
+0006.603 (0) Table creaz_wftrafficrates: Total rows added: 0 in 0.00 seconds
+0006.603 (0) Table creaz_wftrafficrates: finishing file (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wftrafficrates.table.gz - 0.3 KB)
+0006.605 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_options.table.gz (1/39): adding to final database dump
+0006.637 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_users.table.gz (2/39): adding to final database dump
+0006.637 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_usermeta.table.gz (3/39): adding to final database dump
+0006.638 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_commentmeta.table.gz (4/39): adding to final database dump
+0006.639 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_comments.table.gz (5/39): adding to final database dump
+0006.639 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_links.table.gz (6/39): adding to final database dump
+0006.639 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_postmeta.table.gz (7/39): adding to final database dump
+0006.640 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_posts.table.gz (8/39): adding to final database dump
+0006.642 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_term_relationships.table.gz (9/39): adding to final database dump
+0006.643 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_term_taxonomy.table.gz (10/39): adding to final database dump
+0006.643 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_termmeta.table.gz (11/39): adding to final database dump
+0006.644 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_terms.table.gz (12/39): adding to final database dump
+0006.644 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_yoast_seo_links.table.gz (13/39): adding to final database dump
+0006.644 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_yoast_seo_meta.table.gz (14/39): adding to final database dump
+0006.645 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_distributed_storage.table.gz (15/39): adding to final database dump
+0006.645 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_fingerprints.table.gz (16/39): adding to final database dump
+0006.645 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_geolocation_cache.table.gz (17/39): adding to final database dump
+0006.646 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_lockouts.table.gz (18/39): adding to final database dump
+0006.646 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_logs.table.gz (19/39): adding to final database dump
+0006.650 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_itsec_temp.table.gz (20/39): adding to final database dump
+0006.651 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfblockediplog.table.gz (21/39): adding to final database dump
+0006.652 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfblocks7.table.gz (22/39): adding to final database dump
+0006.652 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfconfig.table.gz (23/39): adding to final database dump
+0006.653 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfcrawlers.table.gz (24/39): adding to final database dump
+0006.654 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wffilechanges.table.gz (25/39): adding to final database dump
+0006.654 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wffilemods.table.gz (26/39): adding to final database dump
+0006.654 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfhits.table.gz (27/39): adding to final database dump
+0006.655 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfhoover.table.gz (28/39): adding to final database dump
+0006.655 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfissues.table.gz (29/39): adding to final database dump
+0006.655 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfknownfilelist.table.gz (30/39): adding to final database dump
+0006.656 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wflivetraffichuman.table.gz (31/39): adding to final database dump
+0006.656 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wflocs.table.gz (32/39): adding to final database dump
+0006.656 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wflogins.table.gz (33/39): adding to final database dump
+0006.657 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfnotifications.table.gz (34/39): adding to final database dump
+0006.657 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfpendingissues.table.gz (35/39): adding to final database dump
+0006.657 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfreversecache.table.gz (36/39): adding to final database dump
+0006.658 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfsnipcache.table.gz (37/39): adding to final database dump
+0006.658 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wfstatus.table.gz (38/39): adding to final database dump
+0006.659 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db-table-creaz_wftrafficrates.table.gz (39/39): adding to final database dump
+0006.659 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db.gz: finished writing out complete database file (208 KB)
+0006.664 (0) Total database tables backed up: 39 (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db.gz, size: 241859, sha256)
+0006.668 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0006.668 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0006.668 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0006.669 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip: others: This file has not yet been successfully uploaded: will queue
+0006.669 (0) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db.gz: db: This file has not yet been successfully uploaded: will queue
+0006.669 (0) Saving backup history. Total backup size: 70.5 MB
+0006.670 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0006.671 (0) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0006.672 (0) Beginning dispatch of backup to remote (dropbox) (instance identifier s-dc1bcb00f14698b813d7f2848c2395da)
+0006.672 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0006.677 (0) Dropbox: access gained; setting chunk size to: 1024 KB
+0007.631 (0) Dropbox: quota usage: used=9124.2 MB, total=2102016 MB, available=2092891.8 MB
+0007.632 (0) Dropbox: Attempt to upload: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip to: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip
+0009.746 (0) Dropbox chunked upload: 4.8 % uploaded (AAAAAAAAAciAc2ZAJbJE8g, 1048576, 2560 KB)
+0012.874 (0) Dropbox chunked upload: 16.6 % uploaded (AAAAAAAAAciAc2ZAJbJE8g, 3670016, 5632 KB)
+0017.197 (0) Dropbox chunked upload: 42.8 % uploaded (AAAAAAAAAciAc2ZAJbJE8g, 9437184, 10240 KB)
+0024.343 (0) Dropbox chunked upload: 90.3 % uploaded (AAAAAAAAAciAc2ZAJbJE8g, 19922944, 10240 KB)
+0027.706 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAciAc2ZAJbJE8g, 22066069, 10240 KB)
+0029.573 (0) Recording as successfully uploaded: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip
+0029.575 (0) Deleting local file: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip: OK
+0029.575 (0) Dropbox: File upload success (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip): 21548 KB in 21s (982 KB/s)
+0030.429 (0) Dropbox: quota usage: used=9145.3 MB, total=2102016 MB, available=2092870.7 MB
+0030.437 (0) Dropbox: Attempt to upload: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip to: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip
+0036.765 (0) Dropbox chunked upload: 58.9 % uploaded (AAAAAAAAAcm4b_oyFZMnNg, 10485760, 10240 KB)
+0042.832 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAcm4b_oyFZMnNg, 17807602, 10240 KB)
+0044.952 (0) Recording as successfully uploaded: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip
+0044.957 (0) Deleting local file: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip: OK
+0044.957 (0) Dropbox: File upload success (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip): 17390 KB in 14s (1197 KB/s)
+0045.820 (0) Dropbox: quota usage: used=9162.3 MB, total=2102016 MB, available=2092853.7 MB
+0045.820 (0) Dropbox: Attempt to upload: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip to: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip
+0052.076 (0) Dropbox chunked upload: 34.7 % uploaded (AAAAAAAAAcqtNgALmwQ_GQ, 10485760, 10240 KB)
+0057.804 (0) Dropbox chunked upload: 69.4 % uploaded (AAAAAAAAAcqtNgALmwQ_GQ, 20971520, 10240 KB)
+0063.268 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAcqtNgALmwQ_GQ, 30227438, 10240 KB)
+0064.764 (0) Recording as successfully uploaded: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip
+0064.768 (0) Deleting local file: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip: OK
+0064.768 (0) Dropbox: File upload success (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip): 29518 KB in 18s (1557 KB/s)
+0065.620 (0) Dropbox: quota usage: used=9191.1 MB, total=2102016 MB, available=2092824.9 MB
+0065.621 (0) Dropbox: Attempt to upload: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip to: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip
+0310.377 (1) Opened log file at time: Tue, 08 Jan 2019 12:40:53 +0000 on https://www.creaz-creatina.com.br
+0310.378 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0.2 PHP: 7.1.25 (cgi-fcgi, Linux usm68.siteground.biz 3.12.18-clouder0 #1 SMP Wed Mar 28 14:22:08 EEST 2018 x86_64) MySQL: 5.6.40-84.0-log WPLANG: pt_BR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 768M (used: 10.3M | 12M) multisite: N openssl: OpenSSL 1.0.2q  20 Nov 2018 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0310.385 (1) Free space on disk containing Updraft's temporary directory: 367124.8 MB
+0310.387 (1) Backup run: resumption=1, nonce=fcc0ad4c1585, file_nonce=fcc0ad4c1585 begun at=1546950942 (311s ago), job type=backup, previous check-in=63.3s
+0310.388 (1) Scheduling a resumption (2) after 300 seconds (1546951553) in case this run gets aborted
+0310.393 (1) Checking if we have a zip executable available
+0310.393 (1) Zip engine: found/will use a binary zip: /usr/bin/zip
+0310.393 (1) Creation of backups of directories: already finished
+0310.394 (1) Saving backup status to database (elements: 8)
+0310.397 (1) Database dump (WordPress DB): Creation was completed already
+0310.400 (1) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-plugins.zip: plugins: This file has already been successfully uploaded
+0310.400 (1) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-themes.zip: themes: This file has already been successfully uploaded
+0310.400 (1) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-uploads.zip: uploads: This file has already been successfully uploaded
+0310.400 (1) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip: others: This file has not yet been successfully uploaded: will queue
+0310.401 (1) backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db.gz: db: This file has not yet been successfully uploaded: will queue
+0310.401 (1) Saving backup history. Total backup size: 70.5 MB
+0310.402 (1) Requesting upload of the files that have not yet been successfully uploaded (2)
+0310.402 (1) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0310.403 (1) Beginning dispatch of backup to remote (dropbox) (instance identifier s-dc1bcb00f14698b813d7f2848c2395da)
+0310.403 (1) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0310.405 (1) Dropbox: access gained; setting chunk size to: 10240 KB
+0311.368 (1) Dropbox: quota usage: used=9191.1 MB, total=2102016 MB, available=2092824.9 MB
+0311.369 (1) Dropbox: Attempt to upload: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip to: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip
+0314.735 (1) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAcvAvck0E8KReQ, 3538240, 10240 KB)
+0317.124 (1) Recording as successfully uploaded: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip
+0317.126 (1) Deleting local file: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip: OK
+0317.128 (1) Dropbox: File upload success (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-others.zip): 3455 KB in 5s (600 KB/s)
+0318.053 (1) Dropbox: quota usage: used=9194.5 MB, total=2102016 MB, available=2092821.5 MB
+0318.054 (1) Dropbox: Attempt to upload: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db.gz to: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db.gz
+0320.461 (1) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAcxFe24h-57kdw, 241859, 10240 KB)
+0322.242 (1) Recording as successfully uploaded: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db.gz
+0322.244 (1) Deleting local file: backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db.gz: OK
+0322.244 (1) Dropbox: File upload success (backup_2019-01-08-1035_CreaZ_Creatina_100_pura_da_Bo_fcc0ad4c1585-db.gz): 236 KB in 4s (56 KB/s)
+0322.246 (1) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0322.247 (1) Number of backup sets in history: 2; groups (db): 1
+0322.247 (1) Examining (for databases) backup set with group_id=0, nonce=fcc0ad4c1585, datestamp=1546950942 (Jan 08 2019 12:35:42)
+0322.248 (1) This backup set is the backup set just made, so will not be deleted.
+0322.248 (1) Examining (for databases) backup set with group_id=0, nonce=a942a580a654, datestamp=1546679462 (Jan 05 2019 09:11:02)
+0322.248 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0322.248 (1) Number of backup sets in history: 2; groups (files): 1
+0322.248 (1) Examining (for files) backup set with nonce=fcc0ad4c1585, datestamp=1546950942 (Jan 08 2019 12:35:42)
+0322.248 (1) This backup set is the backup set just made, so will not be deleted.
+0322.249 (1) This backup set is the backup set just made, so will not be deleted.
+0322.249 (1) This backup set is the backup set just made, so will not be deleted.
+0322.249 (1) This backup set is the backup set just made, so will not be deleted.
+0322.249 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0322.249 (1) Examining (for files) backup set with nonce=a942a580a654, datestamp=1546679462 (Jan 05 2019 09:11:02)
+0322.249 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0322.249 (1) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0322.252 (1) Resume backup (fcc0ad4c1585, 1): finish run
+0322.253 (1) There were no errors in the uploads, so the 'resume' event (2) is being unscheduled
+0322.255 (1) The backup apparently succeeded and is now complete
+0322.255 (1) No email will/can be sent - the user has not configured an email address.
+0322.255 (1) O backup aparentemente foi bem sucedido e está completo agora.

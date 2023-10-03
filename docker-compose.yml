@@ -1,0 +1,58 @@
+version: "3.7"
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./db_data:/var/lib/mysql
+    expose:
+      - 3306
+    networks:
+      - pampers
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+      - ./.htaccess:/var/www/html/.htaccess
+    expose:
+      - 80
+    networks:
+      - pampers
+      - nginx-proxy
+    environment:
+      VIRTUAL_HOST: pampers.localhost
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    expose:
+      - 80
+    networks:
+      - pampers
+      - nginx-proxy
+    environment:
+      VIRTUAL_HOST: phpmyadmin.pampers.localhost
+      PMA_USERNAME: wordpress
+      PMA_PASSWORD: wordpress
+      PMA_HOSTS: db
+      PHP_MAX_INPUT_VARS: 10000
+
+volumes:
+  db_data:
+
+networks:
+  pampers:
+  nginx-proxy:
+    external:
+      name: proxy_default
