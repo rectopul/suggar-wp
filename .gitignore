@@ -6,10 +6,11 @@ node_modules
 npm-debug.log
 wp-content/update
 wp-content/index.php
-wp-content/plugins/akismet/
+wp-content/plugins
 wp-content/plugins/all-in-one-wp-migration/storage/*
 wp-content/plugins/hello.php
 wp-content/ai1wm-backups/*
 wp-content/uploads/*
 src
 wp-content/themes/pampers/app/theme/node_modules
+wp-content/themes/pampers/node_modules
