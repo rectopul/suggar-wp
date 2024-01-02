@@ -8,6 +8,27 @@ body #order_review {
 }
 
 
+
+.woocommerce-order-overview,
+.woocommerce-order > .woocommerce-order-details,
+.woocommerce-notice {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding: 0 15px;
+}
+
+body ul.woocommerce-thankyou-order-details {
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+
+body .woocommerce-notice {
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+
+
 @media screen and (max-width: 600px) {
     body #order_review {
         flex-direction: column;
