@@ -1,4 +1,4 @@
-import { listAllPaymentGateways, listProductsMoreSell } from "../util/Api"
+import { listProductsMoreSell } from "../util/Api"
 import { parcelOptions, percentProduct } from "../util/Price"
 import { ProductPros } from "../util/types"
 import { ArrowDown, ArrowRight } from "lucide-react"

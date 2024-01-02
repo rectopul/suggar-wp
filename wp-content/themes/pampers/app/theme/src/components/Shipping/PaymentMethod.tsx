@@ -18,10 +18,11 @@ export default function PaymentMethod({ onSelectRadio }: PaymentMethodProps) {
     const gatewaysList = async () => {
         try {
             const list = await listAllPaymentGateways()
-            setGateways(list)
+            const listActive = list.filter(i => i.enabled === true)
+            setGateways(listActive)
 
-            if (list.length > 0) {
-                setSelectedGateway(list[0].id);
+            if (listActive.length > 0) {
+                setSelectedGateway(listActive[0].id);
             }
         } catch (error) {
             console.log(`Erro ao listar gateways de pagamento`)
