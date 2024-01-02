@@ -5,6 +5,8 @@ db_data
 node_modules
 npm-debug.log
 wp-content/update
+wp-content/languages/*
+wp-content/themes/twentyfour/*
 wp-content/plugins
 wp-content/plugins/all-in-one-wp-migration/storage/*
 wp-content/plugins/hello.php
