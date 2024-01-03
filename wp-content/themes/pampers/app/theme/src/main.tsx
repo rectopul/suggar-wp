@@ -17,6 +17,8 @@ const rootCatalog = document.getElementById('root_catalog')
 const rootShop = document.getElementById('root_shop')
 const rootHeader = document.getElementById('root_header')
 
+console.log(`site rodando`)
+
 if(rootHome) {
   ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>

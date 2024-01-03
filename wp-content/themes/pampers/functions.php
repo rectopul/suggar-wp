@@ -204,7 +204,7 @@ function get_nonce_request($request) {
 }
 
 
-if (!function_exists('auaha_setup')) :
+if (!function_exists('rmb_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -212,7 +212,7 @@ if (!function_exists('auaha_setup')) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function auaha_setup()
+	function rmb_setup()
 	{
 		/*
 	 * Make theme available for translation.
@@ -220,7 +220,7 @@ if (!function_exists('auaha_setup')) :
 	 * If you're building a theme based on auaha, use a find and replace
 	 * to change 'auaha' to the name of your theme in all the template files.
 	 */
-		load_theme_textdomain('auaha', get_template_directory() . '/languages');
+		load_theme_textdomain('pamper', get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
@@ -293,7 +293,7 @@ if (!function_exists('auaha_setup')) :
 		add_theme_support('post-thumbnails', array('marketplace', 'post', 'gallery-items', 'audio-items', 'video-items', 'page', 'event-items', 'staff'));
 	}
 endif;
-add_action('after_setup_theme', 'auaha_setup');
+add_action('after_setup_theme', 'rmb_setup');
 
 
 
@@ -301,17 +301,16 @@ add_action('after_setup_theme', 'auaha_setup');
  * Enqueue scripts and styles.
  */
 
-function auaha_scripts()
+function theme_scripts()
 {
 	// Obtém o caminho do arquivo de manifesto
 	$manifest_path = get_template_directory_uri() . '/app/theme/dist/manifest.json';
 
-	// Obtém o nome do arquivo desejado
-	$nome_do_arquivo = 'mini-cart.js';
-
 	// Lê o arquivo de manifesto
 	$manifesto = file_get_contents($manifest_path);
 	$manifesto_json = json_decode($manifesto, true);
+
+	var_dump($manifesto);
 
 	//var_dump($manifesto_json["index.css"]["file"]);
 	// Verifica se o nome do arquivo existe no manifesto
@@ -340,7 +339,7 @@ function auaha_scripts()
 
 
 }
-add_action('wp_enqueue_scripts', 'auaha_scripts');
+add_action('wp_enqueue_scripts', 'theme_scripts');
 
 
 

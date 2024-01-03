@@ -14,6 +14,10 @@ interface PaymentMethodProperties {
 }
 
 export function Shipping() {
+    const defaultMethod = {
+        payment_method_title: "Pix",
+        payment_method: "wc_piggly_pix_gateway"
+    }
 
     const { cart } = useInfos()
     const [mthodPayment, setMethodPayment] = useState<PaymentMethodProperties | null>()
@@ -31,25 +35,65 @@ export function Shipping() {
                 }
             })
             const shipping: ShippintTheTypes = getValues()
-            
-            if(products_order && mthodPayment) {
 
-                const infosOrder: OrderPayloadTypes  = {
-                    line_items: products_order,
-                    payment_method_title: mthodPayment.payment_method_title,
-                    payment_method: mthodPayment.payment_method,
-                    set_paid: false,
-                    shipping,
-                    billing: shipping,
-                    shipping_lines: [{
-                        method_id: 'flat_rate',
-                        method_title: 'Frete Grátis',
-                        total: '0'
-                    }]
+            const discount = {
+                coupon_lines: [
+                    {
+                        code: "PAG-PIX",
+                        discount: "15"
                 }
-                const order = await createOrder({data: {...infosOrder}})
+            ]
+            }
+            
+            if(products_order) {
 
-                window.location.href = order.payment_url
+                if(mthodPayment) {
+                    const infosOrder: OrderPayloadTypes  = {
+                        line_items: products_order,
+                        payment_method_title: mthodPayment.payment_method_title,
+                        payment_method: mthodPayment.payment_method,
+                        set_paid: false,
+                        shipping,
+                        billing: shipping,
+                        shipping_lines: [{
+                            method_id: 'flat_rate',
+                            method_title: 'Frete Grátis',
+                            total: '0'
+                        }]
+                    }
+
+                    if(infosOrder.payment_method == "wc_piggly_pix_gateway") {
+                        const theOrder = {coupon_lines: discount.coupon_lines, ...infosOrder}
+                        const order = await createOrder({data: {...theOrder}})
+                        window.location.href = order.payment_url
+                    }else{
+                        const order = await createOrder({data: {...infosOrder}})
+                        window.location.href = order.payment_url
+                    }
+
+                    
+                }else{
+                    const infosOrder: OrderPayloadTypes  = {
+                        line_items: products_order,
+                        payment_method_title: defaultMethod.payment_method_title,
+                        payment_method: defaultMethod.payment_method,
+                        set_paid: false,
+                        shipping,
+                        billing: shipping,
+                        shipping_lines: [{
+                            method_id: 'flat_rate',
+                            method_title: 'Frete Grátis',
+                            total: '0'
+                        }]
+                    }
+
+                    const theOrder = {coupon_lines: discount.coupon_lines, ...infosOrder}
+                    const order = await createOrder({data: {...theOrder}})
+    
+                    window.location.href = order.payment_url
+                }
+
+                
             }
 
 

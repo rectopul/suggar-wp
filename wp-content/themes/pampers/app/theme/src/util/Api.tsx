@@ -79,8 +79,8 @@ const listAllPaymentGateways = async (): Promise<WooPaymentGatewayList[]> => {
 
 const listProductsMoreSell = async (): Promise<ProductPros[]> => {
     try {
-
-        const url = `${checkProtocol() ? import.meta.env.VITE_PUBLIC_API_URL : import.meta.env.VITE_LOCAL_API_URL}/wc/v3/products`
+        const protocol = checkProtocol()
+        const url = `${protocol ? import.meta.env.VITE_PUBLIC_API_URL : import.meta.env.VITE_LOCAL_API_URL}/wc/v3/products`
 
         if(!url) throw Error(`URL não existente`)
 
