@@ -7,7 +7,12 @@ body #order_review {
     flex-direction: row-reverse;
 }
 
-
+body .woocommerce > .woocommerce-order {
+    width: 100%;
+    padding: 0 15px !important;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .woocommerce-order-overview,
 .woocommerce-order > .woocommerce-order-details,

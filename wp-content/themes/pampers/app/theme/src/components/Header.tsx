@@ -56,7 +56,7 @@ export function Header( { cartToogle, handleCartClose }: headerProps ) {
             <MiniCart tootle={clickBag} onCloseCart={handleCloseCart} />
             <div className="shadow-footer text-center">
                 <header className="w-full bg-lime-green py-12">
-                    <nav className="w-full xl:w-[1400px] px-2 xl:px-0 bg-lime-green flex xl:flex-row flex-col items-center mx-auto justify-between">
+                    <nav className="w-full lg:max-w-[1024px] xl:max-w-[1400px] px-2 xl:px-0 bg-lime-green flex xl:flex-row flex-col items-center mx-auto justify-between">
                         <figure className="w-36 text-center">
                             <a href="/">
                                 {logo && (

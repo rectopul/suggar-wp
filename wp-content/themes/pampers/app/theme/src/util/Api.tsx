@@ -1,6 +1,8 @@
 import oauthSignature from "oauth-signature"
 import { WooPaymentGatewayList } from "../@types/Payment"
 import { AddItemToCartPayload, CartTypes, CatalogProductProps, CategoryType, LocationProps, MediaTypes, OrderPayloadTypes, OrderReturnsType, ProductPros, ProductReview, ProductWithVariationsPros, ShippingTypes, ShopInfoTypes, ShopTypes, UpdateItemCartPayload } from "./types"
+import { CouponsType, IntegrationsTypes } from "../@types/Settings"
+import { ProductVariations } from "../@types/ProductVariations"
 //import oauthSignature from 'oauth-signature'
 
 interface NonceProps {
@@ -8,9 +10,41 @@ interface NonceProps {
     woo_nonce: string
 }
 
+const getShopCredentials = async (): Promise<IntegrationsTypes> => {
+    try {
+        const req = await fetch(`/wp-json/shop/v1/get-integration-keys`)
+
+        if(!req.ok) throw new Error(`Erro ao solicitar credenciais da loja`)
+
+        const res: IntegrationsTypes = await req.json()
+
+        return res
+    } catch (error) {
+        throw error
+    }
+}
+
+const getCoupons = async (): Promise<CouponsType[]> => {
+    try {
+        const req = await fetch(`/wp-json/wc/v3/coupons`)
+
+        if(!req.ok) throw new Error(`Erro ao listar cupons`)
+
+        const res: CouponsType[] = await req.json()
+
+        return res
+    } catch (error) {
+        throw error
+    }
+}
+
 const setNonceToLocalStorage = async () => {
     try {
         const nonce = await getNonce()
+        const credentials = await getShopCredentials()
+
+        localStorage.setItem('theme_consumer_key', credentials.consumer_key)
+        localStorage.setItem('theme_consumer_secret', credentials.consumer_secret)
 
         localStorage.setItem('wp_nonce', nonce.nonce)
         localStorage.setItem('woo_nonce', nonce.woo_nonce)
@@ -19,6 +53,21 @@ const setNonceToLocalStorage = async () => {
     }
 }
 
+
+const getCredentialsToLocalStorage = (): IntegrationsTypes => {
+    try {
+        const consumer_key = localStorage.getItem('theme_consumer_key') || '';
+        const consumer_secret = localStorage.getItem('theme_consumer_secret') || '';
+
+        if (!consumer_key && !consumer_secret) throw Error(`Credenciais inexistentes`);
+
+        const result: IntegrationsTypes = { consumer_key, consumer_secret }
+
+        return result;
+    } catch (error) {
+        throw Error(`Credenciais inexistentes`);
+    }
+};
 
 const getNonceToLocalStorage = (): NonceProps => {
     try {
@@ -35,20 +84,26 @@ const getNonceToLocalStorage = (): NonceProps => {
     }
 };
 
-function OAuth(url: string, method: string): string {
-    const parameters = {
-        oauth_consumer_key : `${import.meta.env.VITE_LOCAL_COMSUMER_KEY}`,
-        oauth_nonce : Math.random().toString(32).replace(/[^a-z]/, '').substr(2),
-        oauth_timestamp : Math.floor(Date.now() / 1000),
-        oauth_signature_method : 'HMAC-SHA1',
-        oauth_version : '1.0',
-    },
-    consumerSecret = `${import.meta.env.VITE_LOCAL_COMSUMER_SECRET}`
-    const signature = oauthSignature.generate(method, url, parameters, consumerSecret);
+async function OAuth(url: string, method: string): Promise<string> {
+    try {
+        const credentials = await getCredentialsToLocalStorage()
+        const parameters = {
+            oauth_consumer_key : `${credentials.consumer_key}`,
+            oauth_nonce : Math.random().toString(32).replace(/[^a-z]/, '').substr(2),
+            oauth_timestamp : Math.floor(Date.now() / 1000),
+            oauth_signature_method : 'HMAC-SHA1',
+            oauth_version : '1.0',
+        },
+        consumerSecret = `${credentials.consumer_secret}`
+        const signature = oauthSignature.generate(method, url, parameters, consumerSecret);
 
-    const auth = `OAuth oauth_consumer_key=${parameters.oauth_consumer_key}, oauth_nonce=${parameters.oauth_nonce}, oauth_signature=${signature}, oauth_signature_method="HMAC-SHA1", oauth_timestamp=${parameters.oauth_timestamp}, oauth_version="1.0"`
+        const auth = `OAuth oauth_consumer_key=${parameters.oauth_consumer_key}, oauth_nonce=${parameters.oauth_nonce}, oauth_signature=${signature}, oauth_signature_method="HMAC-SHA1", oauth_timestamp=${parameters.oauth_timestamp}, oauth_version="1.0"`
 
-    return auth
+        return auth
+    } catch (error) {
+        throw error
+    }
+    
 }
 
 const checkProtocol = () => {
@@ -243,12 +298,31 @@ const getProductInfo = async (productId: string | number): Promise<ProductPros> 
     }
 }
 
-const getProductVariations = async (variationId: string): Promise<ProductWithVariationsPros[]> => {
+const getProductVariations = async (variationId: string | number): Promise<ProductWithVariationsPros[]> => {
     try {
         const req = await fetch(`/wp-json/wc/v3/products/${variationId}/variations`)
         if(!req.ok) throw Error(`Erro ao requisitar medias`)
 
         const res: ProductWithVariationsPros[] = await req.json()
+
+        return res
+    } catch (error) {
+        throw error
+    }
+}
+
+interface retrieveProdVariationProps {
+    product: number
+    variation: number
+}
+
+const retrieveProductVariation = async ({ product, variation }: retrieveProdVariationProps): Promise<ProductVariations> => {
+    try {
+        const req = await fetch(`/wp-json/wc/v3/products/${product}/variations/${variation}`)
+
+        if(!req.ok) throw new Error(`Erro ao buscar variação de produto`)
+
+        const res = await req.json()
 
         return res
     } catch (error) {
@@ -401,10 +475,11 @@ const getCart = async (): Promise<CartTypes> => {
 
 const createOrder = async ({ data }: createOrderProps): Promise<OrderReturnsType> => {
     try {
+        const shop_credentials = await getCredentialsToLocalStorage()
         const protocol = checkProtocol()
         const url = `${!protocol ? import.meta.env.VITE_LOCAL_API_URL : import.meta.env.VITE_PUBLIC_API_URL}/wc/v3/orders`
-        const auth = OAuth(url, `POST`)
-        const credentials = `${import.meta.env.VITE_COMSUMER_KEY}:${import.meta.env.VITE_COMSUMER_SECRET}`;
+        const auth = await OAuth(url, `POST`)
+        const credentials = `${shop_credentials.consumer_key}:${shop_credentials.consumer_secret}`;
         const encodedCredentials = btoa(credentials);
         const req = await fetch(url, {
             method: `POST`,
@@ -493,5 +568,7 @@ export {
     getCart,
     addItemToCart,
     getAddredd,
-    RemoveItemCart
+    RemoveItemCart,
+    getCoupons,
+    retrieveProductVariation
 }

@@ -13,7 +13,7 @@ export default function FullBanner() {
 
     return (
         <div className="w-full text-center">
-            <figure className="w-full md:w-[1400px] mx-auto my-10">
+            <figure className="w-full md:max-w-[1400px] mx-auto my-10">
                 {banner && (
                     <img src={banner} className="w-full rounded-2xl" alt="..." />
                 )}

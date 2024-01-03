@@ -2,6 +2,7 @@ import { MiniCartItem } from "./Item"
 import { useInfos } from "../../provider/InfosProvider"
 import { X } from "lucide-react"
 import { formatPrice } from "../../util/Price"
+import { useEffect } from "react"
 
 interface MinicartProps {
     tootle: boolean
@@ -10,7 +11,16 @@ interface MinicartProps {
 
 
 export function MiniCart({ tootle, onCloseCart}: MinicartProps) {
-    const { cart } = useInfos()
+    const { cart, cartOpen, changeCart } = useInfos()
+
+    const handleCloseCart = () => {
+        onCloseCart(false)
+        changeCart(false)
+    }
+
+    useEffect(() => {
+        changeCart(tootle)
+    }, [tootle])
 
     if(cart) {
         return (
@@ -18,7 +28,7 @@ export function MiniCart({ tootle, onCloseCart}: MinicartProps) {
                 className={`
                     md:w-[370px] 
                     transition-all 
-                    ${!tootle ? 'translate-x-full' : ''}
+                    ${!cartOpen ? 'translate-x-full' : ''}
                     ease-out
                     duration-500
                     w-full 
@@ -41,7 +51,7 @@ export function MiniCart({ tootle, onCloseCart}: MinicartProps) {
                         <span>Carrinho <b>{cart.items_count}</b> Items</span>
                         <button 
                             className="text-lime-green font-semibold hover:text-green-500"
-                            onClick={() => onCloseCart(false)}
+                            onClick={handleCloseCart}
                         ><X size={25} /></button>
                     </header>
 
@@ -71,7 +81,7 @@ export function MiniCart({ tootle, onCloseCart}: MinicartProps) {
                         <a 
                             href="#" 
                             className="bg-lime-green border border-lime-green hover:bg-white hover:text-lime-green text-center rounded-md w-6/12 p-2 text-white font-semibold text-xs whitespace-nowrap"
-                            onClick={() => onCloseCart(false)}
+                            onClick={handleCloseCart}
                         >Continuar comprando</a>
                     </footer>
                 </div>

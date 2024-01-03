@@ -190,9 +190,23 @@ function register_get_nonce_route() {
         'methods' => 'GET',
         'callback' => 'get_nonce_request',
     ));
+
+    register_rest_route('shop/v1', 'get-integration-keys', array(
+        'methods' => 'GET',
+        'callback' => 'get_integrations_keys',
+    ));
 }
 
 add_action('rest_api_init', 'register_get_nonce_route');
+
+function get_integrations_keys($request) {
+    // Gere o nonce
+    $consumerKey = get_theme_mod( 'woo_customer_key' );
+    $consumerSecret = get_theme_mod( 'woo_customer_secret' );
+
+    // Retorne o nonce como JSON
+    return rest_ensure_response(array('consumer_key' => $consumerKey, 'consumer_secret' => $consumerSecret));
+}
 
 function get_nonce_request($request) {
     // Gere o nonce
@@ -310,9 +324,6 @@ function theme_scripts()
 	$manifesto = file_get_contents($manifest_path);
 	$manifesto_json = json_decode($manifesto, true);
 
-	var_dump($manifesto);
-
-	//var_dump($manifesto_json["index.css"]["file"]);
 	// Verifica se o nome do arquivo existe no manifesto
 	if (isset($manifesto_json["index.html"])) {
 		$url_do_arquivo = $manifesto_json["index.html"]["file"];

@@ -9,6 +9,8 @@ interface ContextData {
     items_menus: MenuItemsTypes | null
     cart: CartTypes | null,
     updateCart: (data: CartTypes) => void
+    changeCart: (state: boolean) => void
+    cartOpen: boolean
 }
 
 const defaultContextData: ContextData = {
@@ -17,7 +19,9 @@ const defaultContextData: ContextData = {
     media: null,
     items_menus: null,
     cart: null,
-    updateCart: () => {}
+    updateCart: () => {},
+    changeCart: () => {},
+    cartOpen: false
 };
 
 const context = createContext<ContextData>(defaultContextData);
@@ -31,6 +35,7 @@ export default function InfosProvider({ children }: InfosProviderProps) {
     const [shop, setShop] = useState<ShopTypes | null>(null); // Defina o tipo como ShopInfoTypes | null
     const [media, setMedia] = useState<MediaTypes | null>(null); // Defina o tipo como ShopInfoTypes | null
     const [cart, setCart] = useState<CartTypes | null>(null)
+    const [stateCart, setStateCart] = useState<boolean>(false)
 
     const getInfos = async () => {
         try {
@@ -52,6 +57,10 @@ export default function InfosProvider({ children }: InfosProviderProps) {
         setCart(newCart);
     };
 
+    const changeCart = (state: boolean) => {
+        setStateCart(state);
+    };
+
     useEffect(() => {
         getInfos();
     }, []);
@@ -62,7 +71,9 @@ export default function InfosProvider({ children }: InfosProviderProps) {
         media,
         items_menus: null,
         cart,
-        updateCart
+        updateCart,
+        changeCart,
+        cartOpen: stateCart
     }
 
     return (

@@ -1,6 +1,7 @@
 import { useState,  useEffect } from "react";
 import { getAllCatalog, getAllProductsCategory } from "../../util/Api";
 import { formatPrice } from "../../util/Price";
+import { CatalogFilter } from "./Filter";
 
 interface ImagesCategory {
     name: string
@@ -41,13 +42,14 @@ export function Catalog() {
         getCategories()
     }, [])
     return (
-        <div className="w-full">
-            <div className="w-full md:w-[1400px] px-2 md:px-0 mx-auto flex flex-col">
+        <div className="w-full lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1400px] mx-auto flex">
+            <CatalogFilter />
+            <div className="w-8/12 px-2 md:px-0 mx-auto flex flex-col">
                 <h3 className="font-bold text-lg md:text-3xl text-lime-green mt-4">{categoryId ? categoryId.title : 'Catalogo'}</h3>
 
                 <div className="w-full px-2 md:px-0 py-4 flex flex-wrap">
                     {categories && categories.map((c, k) => (
-                        <div className="w-6/12 md:w-2/12 flex" key={k}>
+                        <div className="w-6/12 lg:w-3/12 xl:w-4/12 flex" key={k}>
                             <div className="flex shadow mx-1 my-3 flex-col rounded-md">
                                 <figure className="w-full p-3">
                                     <img src={c.images[0].src} className="rounded-lg" alt="..." />

@@ -8,9 +8,9 @@ export default function SubHeader() {
     const [categories, setCategories] = useState<CategoryType[]>()
 
     const getInformations = async () => {
-        const city = await getCity()
         const categoriesList = await getCategories()
         setCategories(categoriesList)
+        const city = await getCity()
         setCity(city)
     }
 

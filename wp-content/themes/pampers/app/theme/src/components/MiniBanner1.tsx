@@ -4,7 +4,7 @@ export default function MiniBanner1() {
     const { infos } = useInfos()
     return (
         <div className="w-full my-10">
-            <div className="w-full md:w-[1400px] mx-auto mt-10 flex-col md:flex-row px-2 md:px-0 flex justify-between">
+            <div className="w-full md:max-w-[1400px] mx-auto mt-10 flex-col md:flex-row px-2 md:px-0 flex justify-between">
                 <figure>
                     <img src={infos?.mini_banner_1} alt="..." />
                 </figure>

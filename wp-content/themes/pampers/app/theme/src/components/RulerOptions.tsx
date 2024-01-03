@@ -5,7 +5,7 @@ export default function RulerOptions() {
 
     return (
         <div className="w-full my-10">
-            <div className="lg:w-[1400px] mx-auto w-full flex flex-col md:flex-row md:justify-between">
+            <div className="lg:max-w-[1400px] mx-auto w-full flex flex-col md:flex-row md:justify-between">
                 <div className="w-full md:w-1/4 p-3 flex justify-center md:justify-start">
                     <figure className="py-2">
                         <img 

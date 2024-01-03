@@ -51,7 +51,7 @@ export default function PaymentMethod({ onSelectRadio }: PaymentMethodProps) {
                         onChange={() => handleRadioChange({ payment_method: g.id, payment_method_title: g.method_title})}
                     />
         
-                    <span className="text-sm font-semibold text-slate-800 ml-2">{g.method_title}</span>
+                    <span className="text-sm font-semibold text-slate-800 ml-2">{g.title}</span>
                 </div>
             ))}
         </>

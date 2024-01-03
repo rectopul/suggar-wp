@@ -455,7 +455,9 @@ export interface ProductPros {
     images: ImageProps[]
     categories: SimpleCategory[]
     attributes: AttributesProps[]
+    variations: number[]
 }
+
 
 export interface CategoryType {
     id: number

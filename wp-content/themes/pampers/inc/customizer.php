@@ -10,6 +10,13 @@ function rmb_customize_panels($wp_customize)
         'title'          => 'Opções tema Score',
         'description'    => 'Edite e altere informações do tema score',
     ));
+
+    $wp_customize->add_panel('pampers_integration_options', array(
+        'priority'       => 1,
+        'capability'     => 'edit_theme_options',
+        'title'          => 'Opções de integração',
+        'description'    => 'Informações de integração de api do tema',
+    ));
 }
 add_action('customize_register', 'rmb_customize_panels');
 
@@ -18,6 +25,14 @@ add_action('customize_register', 'rmb_customize_panels');
  */
 function rmb_customize_sections($wp_customize)
 {
+    $wp_customize->add_section('woo_keys', array(
+        'title'    => __('Credenciais do Woocommerce', 'pampers'),
+        'capability' => 'edit_theme_options',
+        'description' => __('Edite as informações de credenciais do woocommerce'),
+        'priority' => 1,
+        'panel'            => 'pampers_integration_options'
+    ));
+
     $wp_customize->add_section('section_message_credit', array(
         'title'    => __('Mensagem de crédito', 'score'),
         'capability' => 'edit_theme_options',
@@ -85,6 +100,16 @@ function rmb_customize_settings($wp_customize)
      * Home page title
      * section: home_title
      */
+    $wp_customize->add_setting('woo_customer_key', array(
+        'default'           => '',
+        'transport' => 'postMessage',
+    ));
+
+    $wp_customize->add_setting('woo_customer_secret', array(
+        'default'           => '',
+        'transport' => 'postMessage',
+    ));
+
     $wp_customize->add_setting('section_full_banner', array(
         'default'           => '',
         'transport' => 'postMessage',
@@ -175,6 +200,20 @@ function rmb_custom_controls($wp_customize)
 				'mime_type' => 'image', // other options, e.g. audio 
 			]
 	) );
+
+	$wp_customize->add_control('woo_customer_key', array(
+        'type' => 'text',
+        'section' => 'woo_keys', // // Add a default or your own section
+        'label' => __('Customer Key'),
+        'description' => __('Customer Key gerada pelo woocommerce.'),
+    ));
+
+	$wp_customize->add_control('woo_customer_secret', array(
+        'type' => 'text',
+        'section' => 'woo_keys', // // Add a default or your own section
+        'label' => __('Customer Secret'),
+        'description' => __('Customer Secret gerada pelo woocommerce.'),
+    ));
 
 	$wp_customize->add_control('about_excerpt', array(
         'type' => 'textarea',

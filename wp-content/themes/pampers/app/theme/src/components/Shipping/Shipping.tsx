@@ -1,11 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { createOrder, getAddredd } from "../../util/Api";
+import { createOrder, getAddredd, getCoupons } from "../../util/Api";
 import { useInfos } from "../../provider/InfosProvider";
 import { OrderPayloadTypes, ShippintTheTypes } from "../../util/types";
 import { Resume } from "../Checkout/Resume";
 import InputMask from 'react-input-mask';
-import { Pix } from "../../assets/Icons";
 import PaymentMethod from "./PaymentMethod";
 
 interface PaymentMethodProperties {
@@ -36,6 +35,8 @@ export function Shipping() {
             })
             const shipping: ShippintTheTypes = getValues()
 
+            const coupons = await getCoupons()
+
             const discount = {
                 coupon_lines: [
                     {
@@ -63,7 +64,7 @@ export function Shipping() {
                     }
 
                     if(infosOrder.payment_method == "wc_piggly_pix_gateway") {
-                        const theOrder = {coupon_lines: discount.coupon_lines, ...infosOrder}
+                        const theOrder = coupons.length ? {coupon_lines: discount.coupon_lines, ...infosOrder} : {...infosOrder}
                         const order = await createOrder({data: {...theOrder}})
                         window.location.href = order.payment_url
                     }else{
@@ -259,13 +260,6 @@ export function Shipping() {
 
                         <div className="flex flex-col w-full">
                             <h3 className="font-medium text-lime-green my-3">Metodo de pagamento</h3>
-
-                            <div className="flex flex-col w-full mt-4">
-                                <div className="w-full flex">
-                                    <label htmlFor="payment_type" className="flex text-center font-semibold hover:bg-indigo-500 border-2 border-indigo-500 px-5 w-full text-lg md:text-xl py-8 bg-indigo-300 text-white rounded-3xl"><Pix size={30} className="mr-4" color="#fff" /> Pagamento via PIX </label>
-                                    <input type="radio" className="hidden" name="payment_type" value="pix" />
-                                </div>
-                            </div>
 
                             <div className="flex flex-col w-full mt-4 p-2">
                                 <PaymentMethod onSelectRadio={setMethodPayment} />

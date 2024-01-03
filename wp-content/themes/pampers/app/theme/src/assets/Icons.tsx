@@ -27,6 +27,21 @@ const Cards = ({ size, className }: IconsProps) => (
       </svg>
 )
 
+const AddToCart = ({ size, className, color }: IconsProps) => (
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        version="1.1" 
+        width={size || 512}
+        height={size || 512}
+        x="0" 
+        y="0" 
+        viewBox="0 0 512 512" 
+        //style="enable-background:new 0 0 512 512" 
+        className={className}
+    >
+        <g><path d="M407 16c-57.891 0-105 47.109-105 105s47.109 105 105 105 105-47.109 105-105S464.891 16 407 16zm45 120h-30v30h-30v-30h-30v-30h30V76h30v30h30z" fill={color || `#000000`} opacity="1" data-original="#000000" className=""></path><path d="M137 376h281.602l33.252-128.247c-10.422 3.702-21.396 6-32.807 7.029l-.315 1.218h-70.437l1.117-13.391c-10.366-4.933-19.834-11.239-28.546-18.532L318.205 256h-62.41l-5.001-60h44.059c-6.172-9.201-10.779-19.396-14.561-30H139.031l-20.004-90H0v30h94.974l53.32 240H137c-24.814 0-45 20.186-45 45s20.186 45 45 45h17.763c-1.681 4.715-2.763 9.716-2.763 15 0 24.814 20.186 45 45 45s45-20.186 45-45c0-5.284-1.082-10.285-2.763-15h65.526c-1.681 4.715-2.763 9.716-2.763 15 0 24.814 20.186 45 45 45s45-20.186 45-45c0-5.284-1.082-10.285-2.763-15H422v-30H137c-8.276 0-15-6.724-15-15s6.724-15 15-15zm208.795-90h65.158l-15.555 60h-54.604zm-30.09 0-5.001 60h-47.41l-5.001-60zm-82.5 60h-54.168l-13.336-60h62.503zm-87.507-150h75.007l5.001 60h-66.671zM212 451c0 8.276-6.724 15-15 15s-15-6.724-15-15 6.724-15 15-15 15 6.724 15 15zm150 0c0 8.276-6.724 15-15 15s-15-6.724-15-15 6.724-15 15-15 15 6.724 15 15z" fill={color || `#000000`} opacity="1" data-original="#000000" className=""></path></g>
+    </svg>
+)
 const StartRating = ({ size, className, color }: IconsProps) => (
     <svg 
         xmlns="http://www.w3.org/2000/svg" 
@@ -45,4 +60,4 @@ const StartRating = ({ size, className, color }: IconsProps) => (
 
 
 
-export {Pix, Cards, StartRating}
+export {Pix, Cards, StartRating, AddToCart}

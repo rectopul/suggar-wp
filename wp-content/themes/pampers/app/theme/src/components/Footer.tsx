@@ -21,7 +21,7 @@ export default function Footer() {
 
     return (
         <div className="w-full bg-lime-green">
-            <div className="w-full md:w-[1400px] mx-auto px-5 py-10 md:flex-row flex-col flex text-white">
+            <div className="w-full md:max-w-[1400px] mx-auto px-5 py-10 md:flex-row flex-col flex text-white">
                 <div className="w-full md:w-1/4 flex-col px-3 mb-4 md:mb-0">
                     <figure className="mt-[-20px]">
                         <img src={media?.media_details.sizes.thumbnail.source_url} width={115} alt="..." />
