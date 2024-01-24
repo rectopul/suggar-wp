@@ -7,7 +7,7 @@ services:
     expose:
       - 3306
     networks:
-      - pampers
+      - suggar
     environment:
       MYSQL_ROOT_PASSWORD: wordpress
       MYSQL_DATABASE: wordpress
@@ -24,10 +24,10 @@ services:
     expose:
       - 80
     networks:
-      - pampers
+      - suggar
       - nginx-proxy
     environment:
-      VIRTUAL_HOST: pampers.localhost
+      VIRTUAL_HOST: suggar.localhost
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
@@ -39,10 +39,10 @@ services:
     expose:
       - 80
     networks:
-      - pampers
+      - suggar
       - nginx-proxy
     environment:
-      VIRTUAL_HOST: phpmyadmin.pampers.localhost
+      VIRTUAL_HOST: phpmyadmin.suggar.localhost
       PMA_USERNAME: wordpress
       PMA_PASSWORD: wordpress
       PMA_HOSTS: db
@@ -52,7 +52,7 @@ volumes:
   db_data:
 
 networks:
-  pampers:
+  suggar:
   nginx-proxy:
     external:
       name: proxy_default

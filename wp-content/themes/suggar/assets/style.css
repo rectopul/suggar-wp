@@ -1,0 +1,198 @@
+body #order_review {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+}
+
+body .woocommerce > .woocommerce-order {
+    width: 100%;
+    padding: 0 15px !important;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.woocommerce-order-overview,
+.woocommerce-order > .woocommerce-order-details,
+.woocommerce-notice {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding: 0 15px;
+}
+
+body ul.woocommerce-thankyou-order-details {
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+
+body .woocommerce-notice {
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+
+
+@media screen and (max-width: 600px) {
+    body #order_review {
+        flex-direction: column;
+    }
+
+    body #order_review li.wc_payment_method.payment_method_wc_piggly_pix_gateway .payment_box #pix-por-piggly > .pix-por-piggly--wrapper {
+        flex-direction: column;
+    }
+
+    body #order_review #pix-por-piggly .pix-por-piggly--step:not(:last-child)::after {
+        content: initial;
+    }
+}
+
+.entry-header .entry-title {
+    display: none;
+}
+.woocommerce-error {
+    display: none;
+}
+.woocommerce > ul.order_details {
+    width: 100%;
+    max-width: 1400px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+body #order_review .shop_table {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 25px 15px;
+}
+
+body #order_review #payment {
+    flex: 0 0 50%;
+    padding: 0 15px;
+}
+
+body #order_review .wc_payment_methods {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 25px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229 231 235 / 1);
+}
+
+body ul.wc_payment_methods > li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+body ul.wc_payment_methods > li:hover{
+    background-color: rgb(30 167 159 / 1);
+    color: #ffffff;
+}
+
+body ul.wc_payment_methods > li:hover label {
+    color: #ffffff;
+}
+
+body ul.wc_payment_methods > li input {
+    width: 20px;
+    height: 20px;
+}
+
+body ul.wc_payment_methods > li label {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(30 167 159 / 1);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+body #order_review .wc_payment_method.payment_method_wc_piggly_pix_gateway label img {
+    width: 45px;
+    margin-left: 5px;
+    height: auto
+}
+
+body #order_review li.wc_payment_method.payment_method_wc_piggly_pix_gateway .payment_box {
+    flex: 0 0 100%;
+    margin-top: 15px;
+}
+
+body #order_review li.wc_payment_method.payment_method_wc_piggly_pix_gateway .payment_box #pix-por-piggly {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+body #order_review li.wc_payment_method.payment_method_wc_piggly_pix_gateway .payment_box #pix-por-piggly > p {
+    text-align: left;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(229 231 235 / 1);
+    color: rgb(156 163 175 / 1);
+    font-weight: 500;
+}
+
+body #order_review li.wc_payment_method.payment_method_wc_piggly_pix_gateway .payment_box #pix-por-piggly > img {
+    width: 150px !important;
+    margin: 0 auto;
+    height: auto !important;
+}
+
+body #order_review li.wc_payment_method.payment_method_wc_piggly_pix_gateway .payment_box #pix-por-piggly .pix-por-piggly--step {
+    color: rgb(30 167 159 / 1);
+    font-weight: 400;
+}
+
+body #order_review li.wc_payment_method.payment_method_wc_piggly_pix_gateway .payment_box #pix-por-piggly > .pix-por-piggly--wrapper {
+    display: flex;
+}
+
+body #order_review #pix-por-piggly .pix-por-piggly--step::before {
+    background-color: rgb(30 167 159 / 1);
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -25px;
+}
+
+#order_review #payment > .form-row {
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid rgb(229 231 235 / 1);
+    border-radius: 30px;
+}
+
+#order_review #payment > .form-row #place_order {
+    float: left;
+    margin-top: 10px;
+    background-color: rgb(30 167 159 / 1);
+    padding: 15px 25px;
+}
+
+body #order_review #pix-por-piggly .pix-por-piggly--step:not(:last-child)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='512' height='512' x='0' y='0' viewBox='0 0 492.004 492.004' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''%3E%3Cg%3E%3Cpath d='M484.14 226.886 306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z' fill='%231ea79f' data-original='%23000000' class='' opacity='1'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    content: '';
+    right: -20px;
+    top: 20%;
+    transform: translateX(-50%);
+} 
